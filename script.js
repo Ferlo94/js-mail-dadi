@@ -20,3 +20,11 @@
 
 
 const mailUtente = prompt("Inserisci la tua email");
+const messaggio = document.getElementById('messaggio')
+
+const tutteLeMail = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"]
+
+if (mailUtente == tutteLeMail[0] || tutteLeMail[1] || tutteLeMail[3]){
+    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    console.log("UTENTE AUTORIZZATO");
+}

@@ -1,4 +1,5 @@
 const button = document.getElementById("button")
+const text = document.getElementById("text")
 const myNumber = 0;
 const cpuNumber= 0;
 
@@ -13,8 +14,12 @@ button.addEventListener("click",
         console.log(cpuNumber);
 
         if(myNumber > cpuNumber) {
+            text.innerHTML = "VITTORIAAA!!!"
+            text.classList.add("pink");
             console.log("VITTORIAAA!!!")
         } else {
+            text.innerHTML = "HAI PERSO.."
+            text.classList.add("pink");
             console.log("HAI PERSO..")
         }
     }

@@ -27,15 +27,19 @@ console.log(mailUtente);
 const tutteLeMail = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"]
     
 if (mailUtente.includes('angela@gmail.com')) {
-    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    messaggio.innerHTML = "ACCESSO CONSENTITO"
+    messaggio.classList.add("green");
     console.log("UTENTE AUTORIZZATO")
 } else if (mailUtente.includes('paolo@gmail.com')) {
-    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    messaggio.innerHTML = "ACCESSO CONSENTITO"
+    messaggio.classList.add("green");
     console.log("UTENTE AUTORIZZATO")
 } else if (mailUtente.includes('alfonso@gmail.com')) {
-    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    messaggio.innerHTML = "ACCESSO CONSENTITO"
+    messaggio.classList.add("green");
     console.log("UTENTE AUTORIZZATO")
 } else {
     messaggio.innerHTML = "ACCESSO NEGATO"
-    console.log("UTENTE NON AUTORIZZATO")
+    messaggio.classList.add("red");
+    console.log("UTENTE NON AUTORIZZATO");
 }

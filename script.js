@@ -15,7 +15,6 @@
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 // Vi consigliamo di dividere i due esercizi in due cartelle separate all'interno della stessa repo! :occhiolino:
-// A domani :charmander_dancing: (modificato) 
 
 const mailUtente = prompt("Inserisci la tua email");
 const messaggio = document.getElementById('messaggio')

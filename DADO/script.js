@@ -16,11 +16,17 @@ button.addEventListener("click",
         if(myNumber > cpuNumber) {
             text.innerHTML = "VITTORIAAA!!!"
             text.classList.add("pink");
-            console.log("VITTORIAAA!!!")
+            console.log("VITTORIA")
+
+        } else if (myNumber === cpuNumber) {
+            text.innerHTML = "PARI ;-)"
+            text.classList.add("pink");
+            console.log("PAREGGIO")
+
         } else {
             text.innerHTML = "HAI PERSO.."
             text.classList.add("pink");
-            console.log("HAI PERSO..")
+            console.log("SCONFITTA")
         }
     }
 );

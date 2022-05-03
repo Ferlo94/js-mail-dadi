@@ -13,7 +13,9 @@ button.addEventListener("click",
         console.log(cpuNumber);
 
         if(myNumber > cpuNumber) {
-            console.log("VITTORIAAA")
+            console.log("VITTORIAAA!!!")
+        } else {
+            console.log("HAI PERSO..")
         }
     }
 );

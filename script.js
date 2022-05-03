@@ -22,9 +22,20 @@
 const mailUtente = prompt("Inserisci la tua email");
 const messaggio = document.getElementById('messaggio')
 
-const tutteLeMail = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"]
+console.log(mailUtente);
 
-if (mailUtente == tutteLeMail[0] || tutteLeMail[1] || tutteLeMail[3]){
+const tutteLeMail = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"]
+    
+if (mailUtente.includes('angela@gmail.com')) {
     messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
-    console.log("UTENTE AUTORIZZATO");
+    console.log("UTENTE AUTORIZZATO")
+} else if (mailUtente.includes('paolo@gmail.com')) {
+    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    console.log("UTENTE AUTORIZZATO")
+} else if (mailUtente.includes('alfonso@gmail.com')) {
+    messaggio.innerHTML = "Sei un utente autorizzato a questi file TOP SECRET"
+    console.log("UTENTE AUTORIZZATO")
+} else {
+    messaggio.innerHTML = "ACCESSO NEGATO"
+    console.log("UTENTE NON AUTORIZZATO")
 }

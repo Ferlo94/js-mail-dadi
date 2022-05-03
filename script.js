@@ -17,8 +17,6 @@
 // Vi consigliamo di dividere i due esercizi in due cartelle separate all'interno della stessa repo! :occhiolino:
 // A domani :charmander_dancing: (modificato) 
 
-
-
 const mailUtente = prompt("Inserisci la tua email");
 const messaggio = document.getElementById('messaggio')
 

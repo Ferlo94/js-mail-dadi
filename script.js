@@ -16,27 +16,28 @@
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 // Vi consigliamo di dividere i due esercizi in due cartelle separate all'interno della stessa repo! :occhiolino:
 
+
+const allMails = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"];
+
 const mailUtente = prompt("Inserisci la tua email");
-const messaggio = document.getElementById('messaggio')
+
+const messaggio = document.getElementById('messaggio');
 
 console.log(mailUtente);
 
-const tutteLeMail = ["angela@gmail.com", "paolo@gmail.com", "alfonso@gmail.com"]
-    
-if (mailUtente.includes('angela@gmail.com')) {
-    messaggio.innerHTML = "ACCESSO CONSENTITO"
-    messaggio.classList.add("green");
-    console.log("UTENTE AUTORIZZATO")
-} else if (mailUtente.includes('paolo@gmail.com')) {
-    messaggio.innerHTML = "ACCESSO CONSENTITO"
-    messaggio.classList.add("green");
-    console.log("UTENTE AUTORIZZATO")
-} else if (mailUtente.includes('alfonso@gmail.com')) {
-    messaggio.innerHTML = "ACCESSO CONSENTITO"
-    messaggio.classList.add("green");
-    console.log("UTENTE AUTORIZZATO")
-} else {
-    messaggio.innerHTML = "ACCESSO NEGATO"
-    messaggio.classList.add("red");
-    console.log("UTENTE NON AUTORIZZATO");
+
+
+for (let i = 0; i < allMails.lenght; i++) {
+
+    if (mailUtente === allMails[i]) {
+        messaggio.innerHTML = ("ACCESSO CONSENTITO");
+        messaggio.classList.add("green");
+        console.log("UTENTE AUTORIZZATO")
+
+    } else {
+        messaggio.innerHTML = ("ACCESSO NEGATO");
+        messaggio.classList.add("red");
+        console.log("UTENTE NON AUTORIZZATO");
+    }
 }
+

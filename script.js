@@ -25,9 +25,7 @@ const messaggio = document.getElementById('messaggio');
 
 console.log(mailUtente);
 
-
-
-for (let i = 0; i < allMails.lenght; i++) {
+for (let i = 0; i < allMails.length; i++) {
 
     if (mailUtente === allMails[i]) {
         messaggio.innerHTML = ("ACCESSO CONSENTITO");
